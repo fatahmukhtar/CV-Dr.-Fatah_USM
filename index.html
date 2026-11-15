@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ir. Ts. Dr. Muhamed Abdul Fatah Muhamed Mukhtar | Researcher Profile</title>
+<meta name="description" content="Lecturer in Materials Engineering at Universiti Sains Malaysia. Electronic packaging, solder joint reliability, computational modelling and product innovation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f2ec; --surface:#fffdf9; --ink:#15212b; --muted:#5b6770; --line:#ddd6c9;
+  --accent:#b0522a; --accent-soft:#f1dfd3; --teal:#1f6f6b; --teal-soft:#d9ebe8;
+  --gold:#b98a1e; --silver:#7d8791; --bronze:#a2643a;
+  --serif:"Fraunces",Georgia,serif; --sans:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+[data-theme="dark"]{
+  --bg:#0f161c; --surface:#172029; --ink:#e9e4da; --muted:#9aa5ad; --line:#2a3641;
+  --accent:#e08a5b; --accent-soft:#3a251a; --teal:#5fbfb8; --teal-soft:#16302f;
+  --gold:#e0b64a; --silver:#b3bcc4; --bronze:#d08a5c;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;margin:0;text-wrap:balance}
+.mono{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* header */
+header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+.brand{font-family:var(--serif);font-weight:600;font-size:1.05rem;text-decoration:none;color:var(--ink)}
+.brand span{color:var(--muted);font-family:var(--mono);font-size:.75rem;margin-left:8px}
+.bar-actions{display:flex;gap:8px;align-items:center}
+.pill{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 14px;font-size:.85rem;text-decoration:none;color:var(--ink)}
+.pill:hover{border-color:var(--accent)}
+#menuBtn{display:none}
+nav.sections{display:flex;gap:4px;overflow-x:auto;padding-bottom:10px;scrollbar-width:none}
+nav.sections a{white-space:nowrap;font-size:.85rem;text-decoration:none;color:var(--muted);padding:4px 10px;border-radius:6px}
+nav.sections a:hover,nav.sections a.on{color:var(--ink);background:var(--accent-soft)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center;padding:64px 0 48px}
+.hero h1{font-size:clamp(2rem,4.6vw,3.3rem);margin:14px 0 18px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p.lead{font-size:1.08rem;color:var(--muted);max-width:56ch;margin:0 0 22px}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.btn{display:inline-block;border-radius:8px;padding:10px 18px;font-weight:500;text-decoration:none;border:1px solid var(--accent);background:var(--accent);color:#fff}
+[data-theme="dark"] .btn{color:#14100c}
+.btn.ghost{background:transparent;color:var(--accent)}
+.badges{display:flex;flex-wrap:wrap;gap:8px}
+.badge{font-family:var(--mono);font-size:.72rem;border:1px solid var(--line);border-radius:6px;padding:4px 8px;background:var(--surface)}
+.portrait{position:relative;justify-self:center;width:min(300px,100%)}
+.portrait .frame{aspect-ratio:4/5;border-radius:14px;overflow:hidden;background:var(--teal-soft);border:1px solid var(--line);display:grid;place-items:center}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:top}
+.portrait .initials{font-family:var(--serif);font-size:4rem;color:var(--teal)}
+.portrait::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--accent);border-radius:14px;z-index:-1}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:12px;background:var(--surface);margin-bottom:24px}
+.stat{padding:18px 20px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-family:var(--serif);font-size:1.9rem;font-weight:600;line-height:1.1}
+.stat span{font-size:.82rem;color:var(--muted)}
+
+/* sections */
+section{padding:56px 0;border-top:1px solid var(--line)}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:8px}
+.sec-head .num{font-family:var(--mono);color:var(--accent);font-size:.9rem}
+.sec-head h2{font-size:clamp(1.5rem,3vw,2.1rem)}
+.sec-intro{color:var(--muted);max-width:68ch;margin:0 0 26px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.grid2.exp{grid-template-columns:1.6fr 1fr;align-items:start}
+.grid2>*,.grid3>*,.focus>*,.contact>*,.hero>*{min-width:0}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 13px;font-size:.85rem}
+button.chip:hover{border-color:var(--accent)}
+button.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tag{font-family:var(--mono);font-size:.68rem;letter-spacing:.04em;text-transform:uppercase;border-radius:4px;padding:2px 7px;background:var(--teal-soft);color:var(--teal);white-space:nowrap}
+.tag.alt{background:var(--accent-soft);color:var(--accent)}
+
+/* research focus */
+.focus{display:grid;grid-template-columns:280px 1fr;gap:20px}
+.focus-list{display:flex;flex-direction:column;gap:6px}
+.focus-list button{text-align:left;border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:11px 14px;font-weight:500}
+.focus-list button[aria-selected="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.focus-panel h3{font-size:1.35rem;margin-bottom:10px}
+.focus-panel dl{margin:16px 0 0;display:grid;gap:12px}
+.focus-panel dt{font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.focus-panel dd{margin:2px 0 0}
+.joint{width:100%;height:auto;margin-top:18px;border-top:1px dashed var(--line);padding-top:16px}
+.joint text{font-family:var(--mono);font-size:10px;fill:var(--muted)}
+
+/* timeline */
+.timeline{border-left:2px solid var(--line);margin-left:8px;padding-left:26px;display:grid;gap:16px}
+.job{position:relative}
+.job::before{content:"";position:absolute;left:-33px;top:22px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.job.now::before{background:var(--accent)}
+.job summary{cursor:pointer;list-style:none;display:grid;gap:2px}
+.job summary::-webkit-details-marker{display:none}
+.job summary h3{font-size:1.15rem}
+.job summary .more{font-size:.82rem;color:var(--accent);margin-top:4px}
+.job[open] summary .more{display:none}
+.job ul{margin:14px 0 0;padding-left:18px;color:var(--muted)}
+.job li{margin-bottom:4px}
+.edu{display:grid;gap:10px}
+.edu div{display:grid;grid-template-columns:64px 1fr;gap:12px}
+.edu b{font-family:var(--mono);font-weight:500;color:var(--accent)}
+
+/* publications */
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:12px}
+.controls input{flex:1;min-width:200px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:8px 12px;font:inherit}
+.years{display:flex;align-items:flex-end;gap:6px;height:96px;margin:18px 0 6px;overflow-x:auto}
+.years button{flex:1;min-width:34px;border:0;background:none;padding:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:4px}
+.years i{display:block;width:100%;background:var(--teal);border-radius:3px 3px 0 0;opacity:.55}
+.years button:hover i,.years button[aria-pressed="true"] i{opacity:1;background:var(--accent)}
+.years small{font-family:var(--mono);font-size:.66rem;color:var(--muted)}
+.count{font-size:.85rem;color:var(--muted);margin:10px 0}
+.pubs{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.pubs li{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;grid-template-columns:54px 1fr;gap:12px}
+.pubs .yr{font-family:var(--mono);color:var(--accent);font-size:.9rem;padding-top:2px}
+.pubs .t{font-weight:500}
+.pubs .a,.pubs .v{font-size:.88rem;color:var(--muted)}
+.pubs .v em{color:var(--ink)}
+.pubs .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+
+/* grants */
+.bars{display:grid;gap:10px}
+.bar-row{display:grid;grid-template-columns:150px 1fr 110px;gap:12px;align-items:center;border:0;background:none;padding:4px 6px;border-radius:6px;text-align:left;width:100%}
+.bar-row:hover,.bar-row[aria-pressed="true"]{background:var(--accent-soft)}
+.bar-row .track{height:14px;background:var(--line);border-radius:7px;overflow:hidden}
+.bar-row .fill{height:100%;background:var(--teal);border-radius:7px}
+.bar-row[aria-pressed="true"] .fill{background:var(--accent)}
+.bar-row .amt{font-family:var(--mono);font-size:.82rem;text-align:right}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);text-align:left;font-weight:500;padding:8px 10px;border-bottom:1px solid var(--line)}
+td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+td.n{font-family:var(--mono);white-space:nowrap;text-align:right}
+th.n{text-align:right}
+.table-wrap{overflow-x:auto}
+
+/* awards */
+.medals{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}
+.medal{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:14px 16px;border-top:3px solid var(--c)}
+.medal b{font-family:var(--serif);font-size:1.7rem;display:block;line-height:1.1}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--c);margin-right:7px}
+.gold{--c:var(--gold)}.silver{--c:var(--silver)}.bronze{--c:var(--bronze)}.special{--c:var(--teal)}
+
+.list{margin:0;padding-left:18px}
+.list li{margin-bottom:6px}
+.contact{display:grid;grid-template-columns:1.2fr 1fr;gap:20px}
+footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--muted);font-size:.85rem}
+
+@media (max-width:820px){
+  .hero{grid-template-columns:1fr;padding-top:36px;gap:32px}
+  .portrait{order:-1;width:200px;justify-self:start}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat:nth-child(2){border-right:0}
+  .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .grid2,.grid2.exp,.grid3,.focus,.contact{grid-template-columns:1fr}
+  .pill{white-space:nowrap;padding:6px 11px}
+  .pubs li{grid-template-columns:1fr;gap:2px}
+  .pubs .v,.pubs .t{overflow-wrap:anywhere}
+  .medals{grid-template-columns:1fr 1fr}
+  #menuBtn{display:inline-block}
+  nav.sections{display:none;flex-direction:column;padding-bottom:12px}
+  nav.sections.open{display:flex}
+  .bar-row{grid-template-columns:1fr 90px}
+  .bar-row .track{grid-column:1/-1;grid-row:2}
+  .brand span{display:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{header.top,.controls,.cta{display:none}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="bar">
+      <a class="brand" href="#top">M.A. Fatah M. Mukhtar, PhD<span>USM</span></a>
+      <div class="bar-actions">
+        <a class="pill" href="https://www.usm.my" target="_blank" rel="noopener">USM</a>
+        <button class="pill" id="themeBtn" type="button">Dark mode</button>
+        <button class="pill" id="menuBtn" type="button" aria-expanded="false">Menu</button>
+      </div>
+    </div>
+    <nav class="sections" id="nav">
+      <a href="#focus">Research focus</a>
+      <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
+      <a href="#grants">Grants</a>
+      <a href="#awards">Awards</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#supervision">Supervision</a>
+      <a href="#service">Service</a>
+      <a href="#contact">Contact &amp; CV</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+
+  <div class="hero">
+    <div>
+      <div class="mono">Lecturer · School of Materials and Mineral Resources Engineering · USM</div>
+      <h1>Ir. Ts. Dr. Muhamed Abdul Fatah Muhamed Mukhtar: building <em>reliable solder joints</em> for advanced electronic packaging.</h1>
+      <p class="lead">I combine numerical simulation, experiments and machine learning to understand how solder joints, capacitors and moulding compounds behave in electronic assemblies. Before joining Universiti Sains Malaysia I worked as a process engineer at Western Digital, a senior consultant at SIRIM QAS and a lecturer at DRB-HICOM University. Based at the Engineering Campus, Nibong Tebal, Penang.</p>
+      <div class="cta">
+        <a class="btn" href="mailto:fatahmukhtar@usm.my?subject=Research%20collaboration">Propose a collaboration</a>
+        <a class="btn ghost" href="mailto:fatahmukhtar@usm.my?subject=Postgraduate%20study%20enquiry">Enquire about postgraduate study</a>
+      </div>
+      <div class="badges">
+        <span class="badge">Professional Engineer · BEM</span>
+        <span class="badge">CEng MIMechE · UK</span>
+        <span class="badge">Professional Technologist · MBOT</span>
+        <span class="badge">HRD Corp Accredited Trainer</span>
+      </div>
+    </div>
+    <div class="portrait">
+      <div class="frame">
+        <!-- Replace photo.jpg with your own photo (same file name) -->
+        <img src="photo.jpg" alt="Portrait of Dr. Muhamed Abdul Fatah" onerror="this.outerHTML='<div class=&quot;initials&quot;>MAF</div>'">
+      </div>
+    </div>
+  </div>
+
+  <div class="stats" id="stats"></div>
+
+  <!-- 01 -->
+  <section id="focus">
+    <div class="sec-head"><span class="num">01</span><h2>Research focus</h2></div>
+    <p class="sec-intro">Select an area to see the question behind it, the methods I use and where it has been applied.</p>
+    <div class="focus">
+      <div class="focus-list" id="focusList" role="tablist" aria-label="Research areas"></div>
+      <div class="card focus-panel" id="focusPanel" role="tabpanel"></div>
+    </div>
+    <h3 style="font-size:1.05rem;margin:28px 0 12px">Areas of expertise</h3>
+    <div class="chips" id="expertise"></div>
+  </section>
+
+  <!-- 02 -->
+  <section id="experience">
+    <div class="sec-head"><span class="num">02</span><h2>Experience and education</h2></div>
+    <p class="sec-intro">Industry and academic roles since 2008. Select a role to read the details.</p>
+    <div class="grid2 exp">
+      <div class="timeline" id="timeline"></div>
+      <div style="display:grid;gap:20px">
+        <div class="card">
+          <div class="mono" style="margin-bottom:12px">Academic qualifications</div>
+          <div class="edu">
+            <div><b>2022</b><span><strong>PhD, Mechanical Engineering (Computational Fluid Dynamics)</strong><br>Universiti Sains Malaysia<br><small style="color:var(--muted)">Thesis: discrete model simulation and optimisation of nano-reinforced solder fillets using Taguchi analysis and neural networks</small></span></div>
+            <div><b>2014</b><span><strong>MSc, Manufacturing System Engineering</strong><br>Universiti Putra Malaysia<br><small style="color:var(--muted)">Thesis: mistake-proofing nut detection device for automotive metal stamping parts</small></span></div>
+            <div><b>2008</b><span><strong>BEng (Hons), Mechanical Engineering (Automotive)</strong><br>Universiti Teknologi Malaysia<br><small style="color:var(--muted)">Project: line-follower IR mobile robot with obstacle remover</small></span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="mono" style="margin-bottom:12px">Professional registrations</div>
+          <ul class="list">
+            <li>Professional Engineer, Board of Engineers Malaysia (P125742)</li>
+            <li>Chartered Engineer and Member, Institution of Mechanical Engineers, UK (80621527), 2024</li>
+            <li>Professional Technologist, Malaysia Board of Technologists (PT18070709), 2018</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="mono" style="margin-bottom:12px">Software and tools</div>
+          <div class="chips" id="tools"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 -->
+  <section id="publications">
+    <div class="sec-head"><span class="num">03</span><h2>Publications</h2></div>
+    <p class="sec-intro">Filter by type or research area, search by keyword, or select a year in the chart.</p>
+    <div class="controls">
+      <div class="chips" id="pubType"></div>
+      <input id="pubSearch" type="search" placeholder="Search title, author or journal" aria-label="Search publications">
+    </div>
+    <div class="chips" id="pubArea"></div>
+    <div class="years" id="pubYears" aria-label="Publications per year"></div>
+    <div class="count" id="pubCount"></div>
+    <ol class="pubs" id="pubList"></ol>
+  </section>
+
+  <!-- 04 -->
+  <section id="grants">
+    <div class="sec-head"><span class="num">04</span><h2>Research funding</h2></div>
+    <p class="sec-intro">Grant value by funding scheme. Select a scheme to list its projects, or filter by my role.</p>
+    <div class="controls"><div class="chips" id="grantRole"></div></div>
+    <div class="card" style="margin-bottom:18px"><div class="bars" id="grantBars"></div></div>
+    <div class="count" id="grantCount"></div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Project</th><th>Scheme</th><th>Role</th><th>Period</th><th class="n">Value (RM)</th></tr></thead>
+      <tbody id="grantRows"></tbody>
+    </table></div>
+  </section>
+
+  <!-- 05 -->
+  <section id="awards">
+    <div class="sec-head"><span class="num">05</span><h2>Awards and recognition</h2></div>
+    <p class="sec-intro">Innovation awards from exhibitions in Malaysia, Belgium and the United States, 2013 to 2021.</p>
+    <div class="medals" id="medals"></div>
+    <div class="controls"><div class="chips" id="awardFilter"></div></div>
+    <div class="count" id="awardCount"></div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Year</th><th>Award</th><th>Innovation</th><th>Level</th><th>Event</th></tr></thead>
+      <tbody id="awardRows"></tbody>
+    </table></div>
+    <div class="grid2" style="margin-top:22px">
+      <div class="card">
+        <div class="mono" style="margin-bottom:10px">Intellectual property</div>
+        Pneumatic Purge Device for Removing "Excess Silicone Oil" from Liquid Thermal Interface Material (LTIM). Western Digital trade secret, approved 2023, with M.N. Mohamed Zukri, M.R. Ramli and K.F. Yong.
+      </div>
+      <div class="card">
+        <div class="mono" style="margin-bottom:10px">In the media</div>
+        <ul class="list">
+          <li>"Mega medal haul for college", Star Online, 29 December 2013</li>
+          <li>"ICAM gains international recognition", The Sun Daily, 4 November 2014</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 -->
+  <section id="teaching">
+    <div class="sec-head"><span class="num">06</span><h2>Teaching and training</h2></div>
+    <p class="sec-intro">Courses taught at degree and diploma level at USM and DRB-HICOM University, plus industry talks.</p>
+    <div class="chips" id="courses"></div>
+    <div class="grid2" style="margin-top:22px">
+      <div class="card">
+        <div class="mono" style="margin-bottom:10px">Talks and industry training</div>
+        <ul class="list">
+          <li>CFD Applications in Industry, talk for UNITEN students, April 2023</li>
+          <li>Manufacturing Automation, two-day training for Western Digital engineers, March 2023</li>
+          <li>Product Design and Development Workshop, Jabatan Politeknik dan Kolej Komuniti, 2019</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="mono" style="margin-bottom:10px">Consultancy</div>
+        <ul class="list">
+          <li>Process improvement for fuel measurement validation, Metrology Corporation Sdn. Bhd., 2017</li>
+          <li>Technical Advisor, Pertandingan Inovasi PROTON dan Politeknik (PiPPo), 2019</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 -->
+  <section id="supervision">
+    <div class="sec-head"><span class="num">07</span><h2>Supervision</h2></div>
+    <p class="sec-intro">I welcome enquiries from prospective Master's and PhD students in electronic packaging, solder joint reliability and simulation-driven process optimisation.</p>
+    <div class="grid3" id="superStats" style="margin-bottom:20px"></div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Year</th><th>Level</th><th>Project</th></tr></thead>
+      <tbody id="superRows"></tbody>
+    </table></div>
+    <p style="margin-top:20px"><a class="btn" href="mailto:fatahmukhtar@usm.my?subject=Postgraduate%20supervision%20enquiry">Email about supervision</a></p>
+  </section>
+
+  <!-- 08 -->
+  <section id="service">
+    <div class="sec-head"><span class="num">08</span><h2>Professional service</h2></div>
+    <div class="grid2">
+      <div class="card">
+        <div class="mono" style="margin-bottom:10px">Programme accreditation · Malaysia Board of Technologists</div>
+        <p style="margin-top:0;color:var(--muted)">Chair or panel member for eight diploma programme evaluations at vocational colleges, 2020 to 2024.</p>
+        <ul class="list" id="mbot"></ul>
+      </div>
+      <div class="card">
+        <div class="mono" style="margin-bottom:10px">Judging and reviewing</div>
+        <ul class="list" id="judging"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 -->
+  <section id="contact">
+    <div class="sec-head"><span class="num">09</span><h2>Contact and CV</h2></div>
+    <div class="contact">
+      <div class="card">
+        <p style="margin-top:0"><strong>Ir. Ts. Dr. Muhamed Abdul Fatah Muhamed Mukhtar</strong><br>
+        School of Materials and Mineral Resources Engineering<br>
+        Universiti Sains Malaysia, Engineering Campus<br>
+        14300 Nibong Tebal, Pulau Pinang, Malaysia</p>
+        <p>Email: <a href="mailto:fatahmukhtar@usm.my">fatahmukhtar@usm.my</a></p>
+        <div class="cta" style="margin:0">
+          <!-- Upload your CV as cv.pdf in the same folder -->
+          <a class="btn" href="cv.pdf" download>Download CV (PDF)</a>
+          <button class="btn ghost" id="copyEmail" type="button">Copy email address</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="mono" style="margin-bottom:10px">Researcher profiles</div>
+        <!-- Replace each # with your own profile link -->
+        <ul class="list">
+          <li><a href="#" data-todo>Google Scholar</a></li>
+          <li><a href="#" data-todo>ORCID</a></li>
+          <li><a href="#" data-todo>Scopus</a> (h-index 5)</li>
+          <li><a href="#" data-todo>Web of Science</a> (h-index 5)</li>
+          <li><a href="#" data-todo>USM Experts</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="yr"></span> Muhamed Abdul Fatah Muhamed Mukhtar. Information correct as of 2026.</div>
+</footer>
+
+<script>
+/* =====================================================================
+   DATA. Edit the lists below to update the page. No other code changes
+   are needed: counts, charts and filters update automatically.
+   ===================================================================== */
+
+const FOCUS = [
+  {name:"Solder joint reliability",
+   q:"How do solder alloy composition, reflow profile and package geometry decide whether a BGA joint survives thermal cycling?",
+   why:"Smaller, denser packages leave less margin for fatigue cracks and intermetallic growth. Predicting fatigue life early saves costly qualification cycles.",
+   how:"Finite element analysis, accelerated thermal cycling tests, crack growth modelling, intermetallic compound characterisation.",
+   out:"Studies on SAC305 BGA joints, Sn-Bi and SAC hybrid joints, and a USM grant on diffusion bonding of low-temperature solder."},
+  {name:"Nano-reinforced solder and reflow",
+   q:"Where do nanoparticles go during reflow, and how do they change the fillet that forms on ultra-fine components?",
+   why:"Nanoparticle-doped lead-free solder can strengthen joints, but only if the particles distribute well in miniaturised assemblies.",
+   how:"Discrete phase model (DPM) and CFD simulation, fluid-structure interaction, validated against reflow experiments.",
+   out:"PhD work on fillet height of nano-reinforced SAC solder, with papers in JAFM, CFD Letters and Soldering & Surface Mount Technology."},
+  {name:"Capacitors, underfill and moulding compounds",
+   q:"How do moisture, heat and encapsulant gaps cause cracks in multilayer ceramic capacitors and stacked boards?",
+   why:"Hygrothermal failure during reflow is a leading cause of field returns in passive components and stacked PCB assemblies.",
+   how:"Coupled thermal, moisture and stress simulation, with experiments on epoxy and bio-epoxy moulding compounds.",
+   out:"Papers in Microelectronics Reliability and Microelectronics International, and a review on epoxy moulding compounds for high-performance packaging."},
+  {name:"Optimisation and machine learning",
+   q:"Can a small number of simulations or experiments be turned into a reliable process window?",
+   why:"Process engineers need settings they can trust without running hundreds of trials.",
+   how:"Taguchi design of experiments, grey relational analysis, multi-objective optimisation and artificial neural networks.",
+   out:"Applied to solder fillet height, plastic injection moulding of A-pillar parts, and AI-aided defect classification in wafer fabrication."},
+  {name:"Manufacturing and product innovation",
+   q:"What simple device removes a recurring defect or a manual bottleneck on the production line?",
+   why:"Mistake-proofing and low-cost automation deliver immediate quality gains in automotive assembly.",
+   how:"Poka-yoke design, jigs and fixtures, embedded systems and IoT, PLC and robot programming.",
+   out:"37 innovation awards, including gold medals at INPEX (USA), Brussels Innova, ITEX and I-ENVEX."},
+  {name:"Community and SME engineering",
+   q:"How can small food producers increase output with machines designed for their product and budget?",
+   why:"Demand-driven projects connect university engineering to local businesses.",
+   how:"Machine design and fabrication under the Public-Private Research Network (PPRN), and STEM outreach with Jabatan Kerja Raya.",
+   out:"Eight PPRN machines for SMEs, from meat floss and chilli paste to virgin coconut oil and durian crepe."}
+];
+
+const EXPERTISE = ["Electronics packaging","Machine learning","Product design and development","Automotive manufacturing","Modelling and simulation","Computer-aided design","Computational fluid dynamics","Additive manufacturing","Solid mechanics","Robotics and automation","Quality management systems","Finite element analysis","Product innovation","Internet of Things","PLC programming","Unmanned aerial vehicles","Manufacturing processes"];
+
+const TOOLS = ["Ansys Fluent","Ansys Mechanical","SolidWorks","CATIA","AutoCAD","Python","C++","PHP","Arduino","Raspberry Pi","MPLAB X IDE","GX Developer (PLC)","ABB robot programming","Cura","Repetier-Host"];
+
+const JOBS = [
+  {org:"Universiti Sains Malaysia", role:"University Lecturer, School of Materials and Mineral Resources Engineering", when:"Nov 2023 to present", now:true, pts:[
+    "Lecturer and academic advisor for the Materials Engineering programme.",
+    "Member of the Semiconductor Research Committee.",
+    "Lead product development driven by industrial and societal problems.",
+    "Build R&D collaborations with industry, universities, government agencies and SMEs.",
+    "Conduct research and consultation, and write and review academic and technical articles."]},
+  {org:"SIRIM QAS International Sdn. Bhd.", role:"Senior Consultant", when:"Sep 2023 to Oct 2023", pts:[
+    "Planned and managed business development for the Product Certification and Inspection Department.",
+    "Coordinated the development of new certification and inspection schemes against international standards.",
+    "Led a sales and business development team and tenders for inspection projects.",
+    "Training: API 577 Welding Processes, Inspection and Metallurgy."]},
+  {org:"SanDisk Storage Malaysia Sdn. Bhd. (Western Digital)", role:"Staff Process Engineer", when:"Nov 2021 to Sep 2023", pts:[
+    "Owned SSD manufacturing processes including underfill epoxy, curing oven, de-panel and packaging.",
+    "Led an AI-powered video analytics project in SSD packaging to prevent drive drops and reduce downtime.",
+    "Supported new line set-up and validated software for the SSD automation line.",
+    "Led SMT problem solving (solder bridging, tombstoning, de-wetting) using 8D and Six Sigma tools.",
+    "Supervised twelve technicians across front-end and back-end processes and led 8D projects.",
+    "Field co-supervisor for the UKM-WD Master's industry programme and trainer for engineers.",
+    "Worked with WD teams in China and the USA on deep-dive problem solving and patent filing."]},
+  {org:"DRB-HICOM University of Automotive Malaysia", role:"Lecturer, Faculty of Engineering Technology", when:"Mar 2011 to May 2020", pts:[
+    "Programme Coordinator, Diploma and Bachelor of Mechanical Engineering Technology (2017 to 2019).",
+    "Deputy Director, Centre of Research and Innovation (CORI) (2015 to 2016), including setting up its new laboratory.",
+    "Programme Coordinator, Diploma in Vehicle Assembly Management (2013 to 2015).",
+    "Project Manager, DRB-HICOM Design Challenge 2020 and the PROTON and DRB-HICOM University Creative Car Challenge 2018.",
+    "Researcher on the Modenas 175cc engine development project.",
+    "Taught paintshop and bodyshop production, quality management, maintenance, supply chain and production management.",
+    "Responsible for the spot-welding ABB robot cell and workshop equipment."]},
+  {org:"National Precision Tooling Sdn. Bhd.", role:"Technical Executive", when:"Jul 2009 to Mar 2011", pts:[
+    "Audited and selected anchor companies for the Bumiputera Vendor Development Programme in automotive tool, die and mould.",
+    "Prepared gap analyses for each vendor and proposed new technology and equipment.",
+    "Prepared board papers and proposals presented with the Economic Planning Unit.",
+    "Delivered technical consultancy, advisory and training for human capital development."]},
+  {org:"JVC Manufacturing (M) Sdn. Bhd.", role:"Part Quality Assurance Engineer", when:"Mar 2008 to Jul 2009", pts:[
+    "Confirmed designs and 3D part data with R&D using SolidWorks, CMM, SmartScope and non-contact measurement.",
+    "Ran design and process FMEA for camcorder models.",
+    "Evaluated and selected suppliers, and led tooling trials and part evaluations at vendors.",
+    "Carried out process capability studies and solved production line problems."]}
+];
+
+/* type: journal | proceedings.  area: pkg | auto | mat | ctrl */
+const AREAS = {pkg:"Electronic packaging", auto:"Automotive manufacturing", mat:"Materials and processing", ctrl:"Automation and control"};
+const PUBS = [
+  {y:2026,type:"journal",area:"mat",a:"Ramli, M.R., Wong, J.Y., Shuaib, R.K., Muhamed Mukhtar, M.A.F.",t:"Optimization of process parameters and gate design in plastic injection moulding of A-pillar parts using simulation and neural network approaches",v:"Progress in Rubber, Plastics and Recycling Technology"},
+  {y:2026,type:"journal",area:"pkg",a:"Muhamed Mukhtar, M.A.F., Syed Mohamed Zain, S.M.M., Ahmad, I., Abu Bakar, M., Ramli, M.R.",t:"Evaluating the role of conductive epoxy composite layer in multi-layer ceramic capacitors under environmental and thermal stresses",v:"Jurnal Teknologi (Sciences and Engineering), 88(5)",note:"Accepted"},
+  {y:2025,type:"journal",area:"pkg",a:"Abas, M.A., Apalowo, R.K., Che Ani, F., Muhamed Mukhtar, M.A.F.",t:"Numerical simulation and multi objectives optimization of fillet height in reinforced SAC305 solder joints for ultra-fine capacitor assemblies",v:"Soldering & Surface Mount Technology",doi:"10.1108/SSMT-04-2025-0019"},
+  {y:2025,type:"journal",area:"pkg",a:"Lee, E., Muhamed Mukhtar, M.A.F., Saad, A.A., Jaafar, M.",t:"Effects of glass transition temperature and molecular structure of bio-epoxy on epoxy molding compound applications for integrated circuit packaging",v:"Polymer Engineering & Science"},
+  {y:2025,type:"journal",area:"pkg",a:"Apalowo, R.K., Abas, M.A., Muhamed Mukhtar, M.A.F., Ramli, M.R.",t:"Investigation of the impacts of solder alloy composition and temperature profile on fatigue life of ball grid array solder joints under accelerated thermal cycling",v:"Journal of Electronic Packaging, 147",doi:"10.1115/1.4065805"},
+  {y:2025,type:"journal",area:"mat",a:"Al-ogaidi, I.A.K., Shariff, K.A., Mohammed, A.H.M., Mohamad, H., Muhamed Mukhtar, M.A.F.",t:"Effects of sustainable Iraqi porcelanite waste powder on the properties of commercial porcelain tiles",v:"Revue des Composites et des Matériaux Avancés, 35, 1189-1197",doi:"10.18280/rcma.350618"},
+  {y:2025,type:"journal",area:"pkg",a:"Lee, E., Muhamed Mukhtar, M.A.F., Saad, A.A., Jaafar, M.",t:"Epoxy molding compounds for high-performance electronic packaging: a review on recent studies",v:"Materials Science in Semiconductor Processing, 197",doi:"10.1016/j.mssp.2025.109665"},
+  {y:2024,type:"journal",area:"pkg",a:"Abas, M.A., Muhamed Mukhtar, M.A.F.",t:"Effects of different air gaps of underfill encapsulant on multi-stack printed circuit board",v:"Microelectronics Reliability, 163",doi:"10.1016/j.microrel.2024.115533"},
+  {y:2024,type:"journal",area:"pkg",a:"Apalowo, R.K., Muhamed Mukhtar, M.A.F., Abas, M.A., Che Ani, F.",t:"Numerical modeling and optimization of fillet height of reinforced SAC305 solder joint in an ultra-fine capacitor assembly",v:"Soldering & Surface Mount Technology"},
+  {y:2024,type:"journal",area:"pkg",a:"Apalowo, R.K., Abas, M.A., Bachok, Z., Sharif, M.F.M., Che Ani, F., Ramli, M.R., Muhamed Mukhtar, M.A.F.",t:"Deformation and crack growth in multilayered ceramic capacitor during thermal reflow process: numerical and experimental investigation",v:"Microelectronics International"},
+  {y:2024,type:"journal",area:"pkg",a:"Abas, M.A., Apalowo, R.K., Muhamed Mukhtar, M.A.F., Ramli, M.R., Che Ani, F.",t:"Thermal fatigue life prediction and intermetallic compound behaviour of SAC305 BGA solder joints subject to accelerated thermal cycling test",v:"Soldering & Surface Mount Technology, 36, 154-164"},
+  {y:2024,type:"journal",area:"pkg",a:"Apalowo, R.K., Abas, M.A., Muhamed Mukhtar, M.A.F., Ramli, M.R.",t:"Numerical investigation of thermal fatigue crack growth behavior in SAC305 BGA solder joints",v:"Soldering & Surface Mount Technology, 36"},
+  {y:2024,type:"journal",area:"pkg",a:"Mohamed Sunar, M.S., Abu Bakar, M., Jalar, A., Muhamed Mukhtar, M.A.F., Che Ani, F.",t:"Effect of PVD-coated wall aperture roughness on the life span of fine-pitch stencil printing",v:"Soldering & Surface Mount Technology, 36(1), 51-59"},
+  {y:2023,type:"journal",area:"pkg",a:"Apalowo, R.K., Abas, A., Bachok, Z., Sharif, M.F.M., Ani, F.C., Ramli, M.R., Muhamed Mukhtar, M.A.F.",t:"Investigation of hygrothermally induced failures in multilayer ceramic capacitors during thermal reflow process",v:"Microelectronics Reliability, 146, 115028"},
+  {y:2023,type:"journal",area:"pkg",a:"Bachok, Z., Abas, A., Raja Gobal, H.A.L., Yusoff, N., Ramli, M.R., Mohd Sharif, M.F., Muhamed Mukhtar, M.A.F., et al.",t:"Investigation of moisture-induced crack propagation in the soft-termination multi-layer ceramic capacitor during thermal reflow process",v:"Soldering & Surface Mount Technology"},
+  {y:2022,type:"journal",area:"pkg",a:"Md Din, A.S., Abu Bakar, M., Che Ani, F., Riduwan, M., Muhamed Mukhtar, M.A.F.",t:"Effect of feed rate and cutting bit coating towards neatness of PCB cutting process",v:"Jurnal Teknologi, 84(6-2), 119-126",doi:"10.11113/jurnalteknologi.v84.19359"},
+  {y:2020,type:"journal",area:"pkg",a:"Fatah M. Mukhtar, M.A., Abas, A., Che Ani, F., Muhaimin Azaman, A.A.",t:"Effect of peak temperature on SAC nano-reinforced fillet height",v:"CFD Letters, 12(9), 91-103"},
+  {y:2019,type:"journal",area:"pkg",a:"Fatah M. Mukhtar, M.A., Abas, A., Haslinda, M.S., Che Ani, F., Jalar, A., Saad, A.A., Abdullah, M.Z., Ismail, R.",t:"Effect of different SAC based nanoparticle types on the reflow soldering process of miniaturized components using discrete model simulation",v:"Journal of Applied Fluid Mechanics, 12(5)"},
+  {y:2019,type:"proceedings",area:"pkg",a:"Tung, L.H., Fatah M. Mukhtar, M.A., Abas, A., Azman, A., Ng, F.C., Nashrudin, M.N., Samsudin, Z.",t:"Dynamic FSI simulation of pin transfer process for solder paste transport",v:"5th International Conference on Green Design and Manufacture (IConGDM 2019), AIP Conference Proceedings 2129"},
+  {y:2019,type:"proceedings",area:"pkg",a:"Mukhtar, M.A.F.M., Abas, A., Bahri, W.M.E.I.W.S.",t:"Effects of multi-stack ball grid array on multi-stack printed circuit board",v:"ICRAIEM 2018, IOP Conference Series: Materials Science and Engineering 530"},
+  {y:2019,type:"proceedings",area:"auto",a:"Ismail, M.Z.M., Zainal, A.H., Kasim, N.I., Mukhtar, M.A.F.M.",t:"A mini review: lean management tools in assembly line at automotive industry",v:"IPCME 2018, IOP Conference Series: Materials Science and Engineering 469"},
+  {y:2018,type:"journal",area:"pkg",a:"Che Ani, F., Jalar, A., Ismail, R., Othman, N.K., Tura Ali, M.Y., Mustafa, Z., Saad, A.A., Khor, C.Y., Fatah M. Mukhtar, M.A., Abas, A.",t:"TiO2 nanoparticles reinforced lead-free 96.5Sn-3.0Ag-0.5Cu solder paste for ultra-fine package assembly in reflow soldering process",v:"Journal of Advanced Manufacturing Technology"},
+  {y:2017,type:"proceedings",area:"pkg",a:"Mukhtar, M.A.F.M.",t:"Discrete phase model (DPM) study of nano reinforced lead free solder Sn-3.0Ag-0.5Cu (SAC305)",v:"AEROMECH'17, IOP Conference Series: Materials Science and Engineering"},
+  {y:2016,type:"proceedings",area:"auto",a:"Mukhtar, M.A.F.M.",t:"Development of universal portable spray stand for touch up process in automotive paintshop",v:"iMEC-APCOMS 2015, IOP Conference Series: Materials Science and Engineering 114"},
+  {y:2016,type:"proceedings",area:"mat",a:"Rasool Mohideen, S., Thamizhmanii, S., Muhammed Abdul Fatah, M.M., Najmuddin, W. Saidin",t:"Numerical fracture analysis of cryogenically treated alloy steel weldments",v:"iMEC-APCOMS 2015, IOP Conference Series: Materials Science and Engineering 114"},
+  {y:2013,type:"proceedings",area:"ctrl",a:"Ravi, S., Mukhtar, M.A.F.M., Ahmad Zaidi, A.M.",t:"Intelligent fuzzy PID hybrid algorithm for temperature control of pipe extruder",v:"Malaysian Technical Universities Conference on Engineering & Technology (MUCET)"},
+  {y:2013,type:"journal",area:"auto",a:"Mukhtar, M.A.F.M., Ravi, S., Abidin, Z.F.Z., Simon, S.",t:"Detection method for missing nuts in automotive metal parts using go-no-go jig",v:"Getview, 3(5)"},
+  {y:2013,type:"journal",area:"auto",a:"Mukhtar, M.A.F.M., Ravi, S., Abidin, Z.F.Z., Simon, S.",t:"Design and implementation of spot welding trainer for body shop assembly line",v:"Getview, 4(2)"},
+  {y:2013,type:"journal",area:"ctrl",a:"Ravi, S., Ibrahim, A.M., Mukhtar, M.A.F.M., Musa, M.A.",t:"Design and development of DC-DC converter for maximum voltage and maximum power applications",v:"Getview, 3(6)"}
+];
+
+/* lead: true = principal investigator / team or project leader */
+const GRANTS = [
+  {t:"BCEN: Bridge to Co-Exist between Engineering and Nature. Road canopy bridge materials performance for safe arboreal wildlife crossing at Batu Ferringhi, Penang",s:"Industry",role:"Co-researcher",lead:false,p:"Jan 2026 to Dec 2027",rm:15000},
+  {t:"The role of high power laser soldering process on through-hole joint strength",s:"FRGS",role:"Co-researcher",lead:false,p:"Dec 2025 to Nov 2027",rm:100102},
+  {t:"Elucidation of solvent-based controlled degradation mechanisms in epoxy thermosets for reworkable underfill applications",s:"FRGS",role:"Co-researcher",lead:false,p:"Dec 2025 to Nov 2027",rm:117050},
+  {t:"Thermoelectric material properties and depth configurations for optimized energy harvesting in concrete pavements",s:"USM Short Term",role:"Co-researcher",lead:false,p:"Nov 2025 to Oct 2027",rm:45950},
+  {t:"Development of TiO2 nanoparticles as filler in polyimide nanocomposites for electronic packaging",s:"Bridging",role:"Co-researcher",lead:false,p:"Sep 2025 to Aug 2026",rm:24995},
+  {t:"Development of tray defects detection system using numerical simulation",s:"Industry",role:"Co-researcher",lead:false,p:"Jun 2025 to Jul 2027",rm:38091.20},
+  {t:"Experimental and simulation research on the warpage of bio-epoxy molding compound with addition of barium sulfate",s:"Industry",role:"Co-researcher",lead:false,p:"Dec 2024 to Dec 2025",rm:25000},
+  {t:"Geran Strategik USM and Jabatan Kerja Raya Malaysia: strengthening STEM skills through innovative approaches for student talent development",s:"Government agency",role:"Principal investigator",lead:true,p:"Nov 2024 to Nov 2025",rm:16010},
+  {t:"Diffusion bonding of lead-free low-temperature solder Sn-Bi hybrid joint with Sn-Ag-Cu (SAC) solder ball of ball grid array package",s:"USM Short Term",role:"Principal investigator",lead:true,p:"Aug 2024 to Jul 2026",rm:45915},
+  {t:"Synthesis of NiO nanoparticles at varying pH levels by microwave-assisted sol-gel method",s:"Bridging",role:"Co-researcher",lead:false,p:"Aug 2024 to Jul 2025",rm:24970},
+  {t:"Toughening mechanism of CeO2/WO3 modified zirconia-toughened alumina cutting insert for precision machining of natural fibre reinforced polymer composites",s:"FRGS",role:"Co-researcher",lead:false,p:"Aug 2024 to Jul 2027",rm:153400},
+  {t:"Shelf-life extension of sambal products (Zati D'Hati Resources)",s:"PPRN",role:"Project leader",lead:true,p:"Jan 2019 to Jul 2019",rm:35750},
+  {t:"Effect of nanoparticle concentration on fillet height using discrete phase model simulation",s:"DRB-HICOM internal",role:"Team leader",lead:true,p:"Jan 2018 to Apr 2019",rm:21754},
+  {t:"Chilli cutter and seed separator (Zati D'Hati Resources)",s:"PPRN",role:"Project designer",lead:false,p:"Jan 2018 to Aug 2018",rm:37750},
+  {t:"Roti paung maker machine (Wubit and Sibling Enterprise)",s:"PPRN",role:"Project designer",lead:false,p:"Jan 2018 to Aug 2018",rm:37700},
+  {t:"Virgin coconut oil machine (Mega Alif Manufacturer Enterprise)",s:"PPRN",role:"Project designer",lead:false,p:"Jan 2017 to Jul 2017",rm:42350},
+  {t:"Pressure cooker with meat shredder machine (Wan Shalma Wan Sulaiman Enterprise)",s:"PPRN",role:"Team leader",lead:true,p:"Jun 2016 to Feb 2017",rm:25000},
+  {t:"Durian crepe maker machine and electric pan (Nora DC Enterprise)",s:"PPRN",role:"Team leader",lead:true,p:"Jan 2016 to Aug 2016",rm:35570},
+  {t:"Double jacket kettle system with hot filling machine (HIZS Resources)",s:"PPRN",role:"Project designer",lead:false,p:"Jan 2016 to Aug 2016",rm:45000},
+  {t:"Pressure cooker with meat shredder machine (WMK Supply and Services)",s:"PPRN",role:"Project designer",lead:false,p:"Jan 2016 to Aug 2016",rm:30620}
+];
+
+/* m: gold | silver | bronze | special */
+const AWARDS = [
+  [2021,"bronze","Bronze Medal","Augmented Reality Teacher (AuReT)","National","International University Carnival on E-learning (IUCEL) 2021"],
+  [2020,"silver","Silver Medal","Augmented Reality Teacher (AuReT)","National","UniSZA Carnival on e-Learning (UniCeL 2020)"],
+  [2019,"gold","Gold Medal","Smart Hand-Controlled Drive Assist Device for Paraplegic Driver","International","PECIPTA'19, Universiti Tun Hussein Onn Malaysia"],
+  [2019,"silver","Silver Medal","Effect of Different SAC Based Nanoparticle Types on the Reflow Soldering Process","International","PECIPTA'19, Universiti Tun Hussein Onn Malaysia"],
+  [2019,"silver","Silver Medal","E-WARE (Embedded Child Trapped Aware System)","International","ITEX, KLCC Convention Centre"],
+  [2019,"silver","Silver Medal","Child Trapped Alert System","National","NRIC, USM, Pulau Pinang"],
+  [2019,"bronze","Bronze Medal","Child Trapped Alert System","International","Malaysia Technology Expo (MTE) 2019, Kuala Lumpur"],
+  [2018,"gold","Gold Winner","Child Trapped Alert System","National","Hackathon 2018, Politeknik Sultan Azlan Shah"],
+  [2018,"silver","Silver Medal","Spray Booth Environment Monitoring Device for Maintenance and Painter Health","International","ITEX, KLCC Convention Centre"],
+  [2018,"gold","Double Gold Medal","Bolt and Nut Racking System for Vehicle Assembly Industry","International","I-ENVEX, Universiti Malaysia Perlis"],
+  [2017,"special","Merit Award","Portable Fork Lifter","National","Malaysia Technology Expo (MTE) 2017, Kuala Lumpur"],
+  [2016,"gold","Gold Medal","Portable Fork Lifter with Bluetooth Remote Control","International","ITEX, KLCC Convention Centre"],
+  [2016,"gold","Gold Medal","Portable Fork Lifter with Bluetooth Remote Control","International","I-ENVEX, Universiti Malaysia Perlis"],
+  [2015,"silver","Silver Medal","Automatic Wi-Fi Guided Cart for Pre-Delivery Inspection Line","National","AiNEX 2015, Universiti Malaysia Pahang"],
+  [2015,"gold","Gold Medal","Patch Nut Separator Device","National","Anugerah Harta Intelek, Zon Pantai Timur (MyIPO)"],
+  [2015,"silver","Silver Medal","Automatic Wi-Fi Guided Cart for Pre-Delivery Inspection Line","International","ITEX, KLCC Convention Centre"],
+  [2015,"gold","Gold Medal","Brake Pad Thickness Indicator","International","I-ENVEX, Universiti Malaysia Perlis"],
+  [2015,"bronze","Bronze Medal","Automatic Wi-Fi Guided Cart for Pre-Delivery Inspection Line","International","I-ENVEX, Universiti Malaysia Perlis"],
+  [2015,"bronze","Bronze Medal","Brake Pad Thickness Indicator","National","National Innovation and Invention Competition Through Exhibition 2015, POLIMAS"],
+  [2014,"silver","Silver Medal","Universal Portable Spray Stand","National","Eureka Innovation Exhibition 2014, UniKL MSI"],
+  [2014,"silver","Silver Medal","Universal Portable Spray Stand","National","UMP-IGE 2014, Kuantan"],
+  [2014,"gold","Gold Medal","Mistake Proofing Nut Detector (Automotive/Transport)","International","INPEX 2014, Pittsburgh, USA"],
+  [2014,"gold","Gold Medal","Universal Portable Spray Stand (Industrial Equipment)","International","INPEX 2014, Pittsburgh, USA"],
+  [2014,"gold","Gold Medal","Spot Welding Training Jig (Manufacturing Process)","International","INPEX 2014, Pittsburgh, USA"],
+  [2014,"gold","Gold Medal","Universal Portable Spray Stand","International","ITEX, KLCC Convention Centre"],
+  [2014,"gold","Gold Medal","Universal Portable Spray Stand","International","I-ENVEX, Universiti Malaysia Perlis"],
+  [2014,"gold","Gold Medal","Spot Welding Training Jig","National","Malaysia Technology Expo (MTE) 2014, Kuala Lumpur"],
+  [2014,"gold","Gold Medal","Mistake Proofing Nut Detector Device","National","Malaysia Technology Expo (MTE) 2014, Kuala Lumpur"],
+  [2014,"special","2nd Runner Up","Universal Portable Spray Stand","National","DRB-HICOM Service & Education 1st Sectorial QIT/ICC Convention"],
+  [2014,"special","Best Project Award","Universal Portable Spray Stand","National","DRB-HICOM Service & Education 1st Sectorial QIT/ICC Convention"],
+  [2013,"gold","Gold Medal","Mistake Proofing Nut Detector Device","International","Brussels Innova, Belgium"],
+  [2013,"special","Special Award, Polish Inventors & Rationalizers","Mistake Proofing Nut Detector Device","International","Brussels Innova, Belgium"],
+  [2013,"bronze","Bronze Medal","Spot Welding Training Kit","International","Brussels Innova, Belgium"],
+  [2013,"gold","Gold Medal","Spot Welding Training Jig","Local","Pertandingan Inovasi Kolej Komuniti Wilayah Timur, Pahang"],
+  [2013,"gold","Gold Medal","Spot Welding Training Jig","International","EDU-INERI, UPSI, Perak"],
+  [2013,"gold","Gold Medal","Go-No-Go Jig","International","ITEX, KLCC Convention Centre"],
+  [2013,"gold","Gold Medal","Go-No-Go Jig","International","I-ENVEX, Universiti Malaysia Perlis"]
+];
+
+const COURSES = ["Electronic Packaging","Advanced Electronic Packaging","Advanced Material Characterisation for Semiconductor Packaging","Material Selection and Design Analysis","Acquisition and Measurement of Digital Data","Robotics and Automation","Hydraulics and Pneumatics","Statics","Dynamics","Strength of Materials","Control Systems","PLC and Industrial Networking","Product Design and Development","Quality Management Systems (ISO 9001 and ISO/TS 16949)","Mistake Proofing Analysis","Supply Chain Management","Paintshop Production","Bodyshop Production","Operation Maintenance","Motorsport Engine Tuning"];
+
+/* Student names are left out on purpose. Add them only with the students' consent. */
+const SUPERVISION = [
+  [2025,"Master's","Multi-response optimization of Sn/Bi hybrid solder joints using grey relational analysis and neural networks"],
+  [2025,"Master's","Materials characterization and AI-aided defect classification of pad discoloration in semiconductor wafer fabrication"],
+  [2024,"Master's","Optimization of ultrasonic parameters of lanthanum flint glass cleaning using DOE and vapor degreasing with ANN prediction"],
+  [2024,"Bachelor's","Thermo-mechanical and numerical characterization of thermal interface material (TIM) for solid state drives"],
+  [2024,"Bachelor's","Optimizing interfacial bonding between glass and copper using nano-reinforced Sn-Bi solder alloys"],
+  [2024,"Bachelor's","Diffusion bonding and microstructure evolution in lead-free low-temperature Sn-Bi hybrid joints with SAC solder balls"],
+  [2024,"Bachelor's","Enhancing the efficiency of plastic injection molding parameters to minimize warpage and shrinkage"],
+  [2019,"Bachelor's","Effect of stencil thickness on SAC solder fillet height formation"],
+  [2018,"Diploma","Adjustable pocket wrench"],
+  [2018,"Diploma","Chilli paste mixer machine for HIZS Resources (PPRN project)"],
+  [2018,"Diploma","Service bay availability indicator"],
+  [2017,"Diploma","Self-balancing base holder for fuel measurement can, Metrology Corporation"],
+  [2017,"Diploma","Improvement of fuel measurement device, Metrology Corporation"],
+  [2017,"Diploma","Automobile ajar door active assist"],
+  [2017,"Diploma","Temperature and pressure monitoring device for portable spray booth"],
+  [2016,"Diploma","Portable forklifter"],
+  [2016,"Diploma","Portable wireless forklifter"],
+  [2015,"Diploma","Protective cover for side panel"],
+  [2015,"Diploma","Automatic Wi-Fi guided cart for pre-delivery inspection line"],
+  [2014,"Diploma","Multi nut detector device"],
+  [2014,"Diploma","Paint defect detector tool"],
+  [2013,"Diploma","Universal portable spray stand"],
+  [2012,"Diploma","Go-no-go jig"]
+];
+
+const MBOT = ["Diploma Teknologi Kimpalan, KV Kemaman (Chair), Feb 2020","Diploma Teknologi Automotif, KV Lebuh Cator, Feb 2020","Diploma Teknologi Pemesinan Industri, KV Butterworth, Mar 2020","Diploma Teknologi Automotif, KV Seri Iskandar, Mar 2020","Diploma Teknologi Automotif, KV Bintulu, Jul 2020","Diploma Teknologi Pemesinan Industri, KV Kuantan, Jul 2021","Diploma Penyejukan dan Penyamanan Udara, KV Taiping, Jun 2024","Diploma Penyejukan dan Penyamanan Udara, KV Matang, Sep 2024"];
+
+const JUDGING = ["Technical reviewer, Soldering & Surface Mount Technology","Judge, STEM Racing Northern Regional Finals 2026","Judge, F1 in Schools Malaysia National Finals (2014 to 2019, 2023)","Judge, Pertandingan Chem E-Car, Minggu Sains Negara 2020","Judge, 4x4 in Schools National Finals 2019","Judge, International Festival of Innovation on Green Technology (i-FINOG 2019)","Judge, Karnival STEM & Teknologi Hijau and Karnival STREAM, Pahang 2019","Judge, National Robotic Competition, state level (2018, 2019)","Judge, ISEBA 2018 and CITREX 2017","Technical committee reviewer, ICMAT 2017","Judge, Young Innovate 2016, Pahang"];
+
+/* ======================= END OF DATA ======================= */
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const rm = n => n.toLocaleString("en-MY",{maximumFractionDigits:0});
+function chips(el, items, current, onPick){
+  el.innerHTML = "";
+  items.forEach(([key,label]) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "chip"; b.textContent = label;
+    b.setAttribute("aria-pressed", key === current());
+    b.onclick = () => { onPick(key); [...el.children].forEach((c,i) => c.setAttribute("aria-pressed", items[i][0] === current())); };
+    el.appendChild(b);
+  });
+}
+
+/* theme */
+(function(){
+  const btn = $("#themeBtn"); let t = "light";
+  try { t = localStorage.getItem("theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); } catch(e){}
+  const apply = () => { document.documentElement.dataset.theme = t; btn.textContent = t === "dark" ? "Light mode" : "Dark mode"; };
+  btn.onclick = () => { t = t === "dark" ? "light" : "dark"; try { localStorage.setItem("theme", t); } catch(e){} apply(); };
+  apply();
+})();
+
+/* mobile menu + active nav link */
+$("#menuBtn").onclick = e => { const open = $("#nav").classList.toggle("open"); e.currentTarget.setAttribute("aria-expanded", open); };
+document.querySelectorAll("#nav a").forEach(a => a.addEventListener("click", () => $("#nav").classList.remove("open")));
+const spy = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) document.querySelectorAll("#nav a").forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + e.target.id)); }), {rootMargin:"-40% 0px -55% 0px"});
+document.querySelectorAll("section[id]").forEach(s => spy.observe(s));
+
+/* stats */
+const totalRM = GRANTS.reduce((s,g) => s + g.rm, 0);
+$("#stats").innerHTML = [
+  [PUBS.length, "publications"],
+  ["5", "h-index (Scopus and WoS)"],
+  [GRANTS.length, "funded projects, RM " + rm(totalRM)],
+  [AWARDS.length, "innovation awards"]
+].map(([n,l]) => `<div class="stat"><b>${n}</b><span>${l}</span></div>`).join("");
+
+/* research focus */
+const JOINT_SVG = `<svg class="joint" viewBox="0 0 520 120" role="img" aria-label="Cross-section of a ball grid array package on a circuit board">
+  <rect x="90" y="14" width="340" height="26" rx="3" fill="var(--teal)" opacity=".85"/>
+  <rect x="70" y="40" width="380" height="10" fill="var(--muted)" opacity=".5"/>
+  ${[110,170,230,290,350,410].map(x => `<ellipse cx="${x}" cy="64" rx="19" ry="14" fill="var(--accent)"/>`).join("")}
+  <rect x="30" y="78" width="460" height="16" rx="2" fill="var(--teal)" opacity=".35"/>
+  <text x="260" y="10" text-anchor="middle">CHIP PACKAGE</text>
+  <text x="260" y="112" text-anchor="middle">PRINTED CIRCUIT BOARD</text>
+  <text x="456" y="67">SOLDER JOINTS</text>
+</svg>`;
+let focusIdx = 0;
+function drawFocus(){
+  const f = FOCUS[focusIdx];
+  $("#focusList").innerHTML = FOCUS.map((x,i) => `<button type="button" role="tab" aria-selected="${i===focusIdx}" data-i="${i}">${esc(x.name)}</button>`).join("");
+  $("#focusPanel").innerHTML = `<h3>${esc(f.name)}</h3>
+    <dl><div><dt>Research question</dt><dd>${esc(f.q)}</dd></div>
+    <div><dt>Why it matters</dt><dd>${esc(f.why)}</dd></div>
+    <div><dt>Methods</dt><dd>${esc(f.how)}</dd></div>
+    <div><dt>Work so far</dt><dd>${esc(f.out)}</dd></div></dl>${focusIdx < 3 ? JOINT_SVG : ""}`;
+}
+$("#focusList").onclick = e => { const b = e.target.closest("button"); if (b){ focusIdx = +b.dataset.i; drawFocus(); } };
+drawFocus();
+$("#expertise").innerHTML = EXPERTISE.map(x => `<span class="chip">${esc(x)}</span>`).join("");
+$("#tools").innerHTML = TOOLS.map(x => `<span class="chip">${esc(x)}</span>`).join("");
+
+/* timeline */
+$("#timeline").innerHTML = JOBS.map((j,i) => `<details class="job card${j.now ? " now" : ""}"${i===0 ? " open" : ""}>
+  <summary><span class="mono">${esc(j.when)}</span><h3>${esc(j.org)}</h3><span>${esc(j.role)}</span><span class="more">Show details</span></summary>
+  <ul>${j.pts.map(p => `<li>${esc(p)}</li>`).join("")}</ul></details>`).join("");
+
+/* publications */
+const pf = {type:"all", area:"all", year:null, q:""};
+function drawPubs(){
+  const q = pf.q.toLowerCase();
+  const rows = PUBS.filter(p => (pf.type==="all" || p.type===pf.type) && (pf.area==="all" || p.area===pf.area) && (!pf.year || p.y===pf.year) && (!q || (p.t+p.a+p.v).toLowerCase().includes(q)));
+  $("#pubCount").textContent = `Showing ${rows.length} of ${PUBS.length} publications` + (pf.year ? ` from ${pf.year}` : "");
+  $("#pubList").innerHTML = rows.map(p => `<li><span class="yr">${p.y}</span><div>
+    <div class="t">${esc(p.t)}</div><div class="a">${esc(p.a)}</div>
+    <div class="v"><em>${esc(p.v)}</em>${p.doi ? ` · <a href="https://doi.org/${esc(p.doi)}" target="_blank" rel="noopener">doi:${esc(p.doi)}</a>` : ""}</div>
+    <div class="meta"><span class="tag">${p.type==="journal" ? "Journal" : "Proceedings"}</span><span class="tag alt">${AREAS[p.area]}</span>${p.note ? `<span class="tag">${esc(p.note)}</span>` : ""}</div>
+  </div></li>`).join("") || `<li style="display:block">No publications match these filters.</li>`;
+  const byYear = {}; PUBS.forEach(p => byYear[p.y] = (byYear[p.y]||0) + 1);
+  const ys = Object.keys(byYear).map(Number); const max = Math.max(...Object.values(byYear));
+  let html = "";
+  for (let y = Math.min(...ys); y <= Math.max(...ys); y++){
+    const n = byYear[y] || 0;
+    html += `<button type="button" data-y="${y}" aria-pressed="${pf.year===y}" title="${y}: ${n} publication${n===1?"":"s"}" ${n ? "" : "disabled"}><small>${n || ""}</small><i style="height:${n/max*60}px"></i><small>'${String(y).slice(2)}</small></button>`;
+  }
+  $("#pubYears").innerHTML = html;
+}
+$("#pubYears").onclick = e => { const b = e.target.closest("button"); if (b){ const y = +b.dataset.y; pf.year = pf.year===y ? null : y; drawPubs(); } };
+$("#pubSearch").oninput = e => { pf.q = e.target.value; drawPubs(); };
+chips($("#pubType"), [["all","All"],["journal","Journal articles"],["proceedings","Proceedings"]], () => pf.type, k => { pf.type = k; drawPubs(); });
+chips($("#pubArea"), [["all","All areas"], ...Object.entries(AREAS)], () => pf.area, k => { pf.area = k; drawPubs(); });
+drawPubs();
+
+/* grants */
+const gf = {role:"all", scheme:null};
+function drawGrants(){
+  const pool = GRANTS.filter(g => gf.role==="all" || (gf.role==="lead") === g.lead);
+  const sums = {}; pool.forEach(g => sums[g.s] = (sums[g.s]||0) + g.rm);
+  const order = Object.entries(sums).sort((a,b) => b[1]-a[1]); const max = order.length ? order[0][1] : 1;
+  if (gf.scheme && !sums[gf.scheme]) gf.scheme = null;
+  $("#grantBars").innerHTML = order.map(([s,v]) => `<button type="button" class="bar-row" data-s="${esc(s)}" aria-pressed="${gf.scheme===s}"><span>${esc(s)}</span><span class="track"><span class="fill" style="display:block;width:${v/max*100}%"></span></span><span class="amt">RM ${rm(v)}</span></button>`).join("");
+  const rows = pool.filter(g => !gf.scheme || g.s===gf.scheme);
+  $("#grantCount").textContent = `${rows.length} project${rows.length===1?"":"s"}, total RM ${rm(rows.reduce((s,g) => s+g.rm, 0))}` + (gf.scheme ? ` under ${gf.scheme}. Select the scheme again to clear.` : "");
+  $("#grantRows").innerHTML = rows.map(g => `<tr><td>${esc(g.t)}</td><td><span class="tag">${esc(g.s)}</span></td><td>${esc(g.role)}</td><td>${esc(g.p)}</td><td class="n">${rm(g.rm)}</td></tr>`).join("");
+}
+$("#grantBars").onclick = e => { const b = e.target.closest("button"); if (b){ gf.scheme = gf.scheme===b.dataset.s ? null : b.dataset.s; drawGrants(); } };
+chips($("#grantRole"), [["all","All grants"],["lead","As lead"],["member","As co-researcher or designer"]], () => gf.role, k => { gf.role = k; drawGrants(); });
+drawGrants();
+
+/* awards */
+let af = "all";
+const MED = {gold:"Gold", silver:"Silver", bronze:"Bronze", special:"Special and merit"};
+$("#medals").innerHTML = Object.entries(MED).map(([k,l]) => `<div class="medal ${k}"><b>${AWARDS.filter(a => a[1]===k).length}</b>${l}</div>`).join("");
+function drawAwards(){
+  const rows = AWARDS.filter(a => af==="all" || a[1]===af || a[4]===af);
+  $("#awardCount").textContent = `Showing ${rows.length} of ${AWARDS.length} awards`;
+  $("#awardRows").innerHTML = rows.map(a => `<tr><td class="n" style="text-align:left">${a[0]}</td><td style="white-space:nowrap"><span class="dot ${a[1]}"></span>${esc(a[2])}</td><td>${esc(a[3])}</td><td>${esc(a[4])}</td><td>${esc(a[5])}</td></tr>`).join("");
+}
+chips($("#awardFilter"), [["all","All"],["gold","Gold"],["silver","Silver"],["bronze","Bronze"],["special","Special"],["International","International"],["National","National"]], () => af, k => { af = k; drawAwards(); });
+drawAwards();
+
+/* teaching, supervision, service */
+$("#courses").innerHTML = COURSES.map(x => `<span class="chip">${esc(x)}</span>`).join("");
+$("#superStats").innerHTML = ["Master's","Bachelor's","Diploma"].map(l => `<div class="card"><b style="font-family:var(--serif);font-size:1.7rem">${SUPERVISION.filter(s => s[1]===l).length}</b><br>${l} projects supervised</div>`).join("");
+$("#superRows").innerHTML = SUPERVISION.map(s => `<tr><td class="n" style="text-align:left">${s[0]}</td><td><span class="tag${s[1]==="Master's" ? " alt" : ""}">${s[1]}</span></td><td>${esc(s[2])}</td></tr>`).join("");
+$("#mbot").innerHTML = MBOT.map(x => `<li>${esc(x)}</li>`).join("");
+$("#judging").innerHTML = JUDGING.map(x => `<li>${esc(x)}</li>`).join("");
+
+/* contact */
+$("#copyEmail").onclick = async e => {
+  const b = e.currentTarget;
+  try { await navigator.clipboard.writeText("fatahmukhtar@usm.my"); b.textContent = "Copied"; }
+  catch(err){ b.textContent = "fatahmukhtar@usm.my"; }
+  setTimeout(() => b.textContent = "Copy email address", 2000);
+};
+document.querySelectorAll("a[data-todo]").forEach(a => a.addEventListener("click", e => { if (a.getAttribute("href") === "#") e.preventDefault(); }));
+$("#yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
